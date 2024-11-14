@@ -1,11 +1,11 @@
 import { Footer } from "flowbite-react";
 import {
-  BsDribbble,
-  BsFacebook,
+//   BsDribbble,
+//   BsFacebook,
   BsGithub,
-  BsInstagram,
+//   BsInstagram,
   BsLinkedin,
-  BsTwitter,
+//   BsTwitter,
 } from "react-icons/bs";
 
 export function Component() {
