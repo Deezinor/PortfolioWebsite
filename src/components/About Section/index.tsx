@@ -3,7 +3,7 @@ import PlaceHolder from "../../assets/images/placeholder-image.webp"
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-16 lg:py-24" id="about">
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 text-center">
           About Me

@@ -4,6 +4,7 @@ import HeroSection from "./components/Hero Section";
 import Header from "./components/header";
 import ContactSection from "./components/contact";
 import AboutSection from "./components/About Section";
+import ServicesSection from "./components/Services Section";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <body className="min-h-screen">
         <HeroSection />
         <AboutSection />
+        <ServicesSection />
         <section id="services"></section>
         <section id="projects"></section>
         <ContactSection />
