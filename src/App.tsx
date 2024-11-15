@@ -1,26 +1,34 @@
-import "./inbex.css";
-import Footer from "./components/footer";
-import HeroSection from "./components/Hero Section";
-import Header from "./components/header";
-import ContactSection from "./components/contact";
-import AboutSection from "./components/About Section";
-import ServicesSection from "./components/Services Section";
+import Header from './components/header';
+import HeroSection from './components/Hero Section';
+import AboutSection from './components/About Section';
+import ServicesSection from './components/Services Section';
+import ContactSection from './components/contact';
+import ProjectsSection from './components/Projects Section';
+import Footer from './components/footer';
 
 function App() {
   return (
-    <>
-      <Header />
-      <body className="min-h-screen">
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <section id="services"></section>
-        <section id="projects"></section>
-        <ContactSection />
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-      </body>
+    <main className="main-container">
+      <div className="body-wrapper min-h-screen">
+        <Header />
+        <section id="hero">
+          <HeroSection />
+        </section>
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="services">
+          <ServicesSection />
+        </section>
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }
 

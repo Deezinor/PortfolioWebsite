@@ -1,9 +1,15 @@
 import React from "react";
 import PlaceHolder from "../../assets/images/placeholder-image.webp"
+import { Helmet } from 'react-helmet-async';
+
 
 const AboutSection: React.FC = () => {
   return (
     <section className="bg-white py-16 lg:py-24" id="about">
+      <Helmet>
+        <title>About Me - Jake Boulton</title>
+        <meta name="description" content="Learn more about me, my skills and my values."></meta>
+      </Helmet>
       <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 text-center">
           About Me

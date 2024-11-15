@@ -1,64 +1,35 @@
-import { Footer } from "flowbite-react";
 import {
-//   BsDribbble,
-//   BsFacebook,
-  BsGithub,
-//   BsInstagram,
-  BsLinkedin,
-//   BsTwitter,
-} from "react-icons/bs";
+  Footer as FlowbiteFooter, // Rename imported Footer to FlowbiteFooter to avoid conflict
+  FooterBrand,
+  FooterCopyright,
+  FooterDivider,
+  FooterLink,
+  FooterLinkGroup
+} from "flowbite-react";
 
-export function Component() {
+export function Footer() {  // Now you can name your component Footer
   return (
-    <Footer container>
-      <div className="w-full">
-        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div>
-            <Footer.Brand
-              href="https://flowbite.com"
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="Flowbite Logo"
-              name="Flowbite"
-            />
-          </div>
-          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-            <div>
-              <Footer.Title title="about" />
-              <Footer.LinkGroup col>
-                <Footer.Link href="#">Flowbite</Footer.Link>
-                <Footer.Link href="#">Tailwind CSS</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Follow us" />
-              <Footer.LinkGroup col>
-                <Footer.Link href="#">Github</Footer.Link>
-                <Footer.Link href="#">Discord</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Legal" />
-              <Footer.LinkGroup col>
-                <Footer.Link href="#">Privacy Policy</Footer.Link>
-                <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-          </div>
+    <FlowbiteFooter container>
+      <div className="w-full text-center">
+        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
+          <FooterBrand
+            href="https://jake-boulton.netlify.app"
+            src="./src/assets/images/favicon.ico"
+            alt="Flowbite Logo"
+            name="Jake Boulton"
+          />
+          <FooterLinkGroup>
+            <FooterLink href="#about">About</FooterLink>
+            <FooterLink href="#">Privacy Policy</FooterLink>
+            <FooterLink href="#">Licensing</FooterLink>
+            <FooterLink href="#contact">Contact</FooterLink>
+          </FooterLinkGroup>
         </div>
-        <Footer.Divider />
-        <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Reality-B" year={2024} />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            {/* <Footer.Icon href="#" icon={BsFacebook} /> */}
-            {/* <Footer.Icon href="#" icon={BsInstagram} /> */}
-            {/* <Footer.Icon href="#" icon={BsTwitter} /> */}
-            <Footer.Icon href="#" icon={BsGithub} />
-            <Footer.Icon href="#" icon={BsLinkedin} />
-          </div>
-        </div>
+        <FooterDivider />
+        <FooterCopyright href="#" by="Jake Boulton" year={2024} />
       </div>
-    </Footer>
+    </FlowbiteFooter>
   );
 }
 
-export default Footer;
+export default Footer;  // Export your renamed Footer component as default
